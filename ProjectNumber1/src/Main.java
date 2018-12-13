@@ -1,13 +1,15 @@
+import java.sql.SQLOutput;
+
 public class Main {
     //Code your solution to problem number one here
     static int problemOne(String s){
         int answer = 0;
+        String vowel="aeiou";
         for (int i=0;i<s.length();i++){
-            if (s.charAt(i)=='a'|| s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'){
+            if (vowel.indexOf(s.substring(i,i+1))!=-1){
                 answer++;
             }
         }
-        //your code here
         return answer;
     }
     //Code you problem number two here
@@ -19,27 +21,44 @@ public class Main {
             i++;
             answer++;
         }
-        //your code here
         return answer;
     }
     //Code your solution to problem number 3 here
-    static String problemThree(String s){
-        s = s.toLowerCase();
-        String[]array= new String[s.length()];
-        for (int i=0; i<s.length()-1;i++){
-            
+    static String problemThree(String s) {
+        String result = "";
+        String[] array = new String[s.length()];
+        int pos=0;
+        for (int i=0;i<s.length();i++){
+            if (i==s.length()-1){
+                if (s.charAt(i-1)<s.charAt(i)){
+                    result+=s.charAt(i);
+                    array[pos]=result;
+                }
+                break;
+            }
+            if (s.charAt(i)<=s.charAt(i+1)){
+                result+=s.charAt(i);
+            }
+            else{
+                result+=s.charAt(i);
+                array[pos]=result;
+                pos++;
+                result="";
+            }
         }
-        //your code here
+        int size=0;
+        for (int i=0; i<array.length;i++){
+            if (array[i]!=null && array[i].length()>size){
+                size=array[i].length();
+                s=array[i];
+            }
+        }
         return s;
     }
+
     public static void main(String[] args) {
-        /*
-        Set s to a string and run your method using s as the parameter
-        Run your method in a println statement to determine what the output was
-        Once you think you have it working try running the tests.
-        The tests will put your method through several different Strings to test
-        all possible cases.  If you have 100% success then there is no bugs in your methods.
-         */
-        String s;
+        String s="tunivklq";
+        problemThree(s);
     }
+
 }
