@@ -1,24 +1,28 @@
 public class Student {
     //Fields
     private String firstName;
-    private int studentId;
+    private static int studentId=1;
     private String[] courses;
 
     //Constructor
-    Student(String firstName, int studentId){
+    Student(String firstName){
         this.firstName=firstName;
-        this.studentId=studentId;
     }
+
     //Methods
     public String getFirstName(){
         return firstName;
     }
     public int getStudentId(){
-        return studentId+1;
+        return studentId++;
     }
     public String[] getCourses() {
         return courses;
     }
-    
+    public String addCourse(Courses courses){
+        
+    }
+
+
 
 }
