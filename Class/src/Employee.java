@@ -31,7 +31,10 @@ public class Employee {
         return salary*12;
     }
     public int raiseSalary(int percent){
-        return salary+=salary*percent;
+        double temp = salary;
+        temp = temp +((1+percent)/100);
+        salary = (int)temp;
+        return salary;
     }
     public String toString(){
         return "Employee[id="+id+",name="+firstName+lastName+", salary="+salary+"]";
