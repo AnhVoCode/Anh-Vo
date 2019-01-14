@@ -33,8 +33,4 @@ public class Courses {
     public String toString(){
         return "Subject name: "+subjectName;
     }
-
-    public int avgGrade(){
-        return
-    }
 }
