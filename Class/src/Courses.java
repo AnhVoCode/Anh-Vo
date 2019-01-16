@@ -8,9 +8,9 @@ public class Courses {
     Courses(){
         subjectName = "Maths";
     }
-    Courses(String subjectName, int studentGrade){
-        this.subjectName=subjectName;
-        this.studentGrade=studentGrade;
+    Courses(String subjectName,int studentGrade){
+        this.subjectName = subjectName;
+        this.studentGrade = studentGrade;
     }
     //methods
 

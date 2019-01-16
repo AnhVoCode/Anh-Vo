@@ -1,22 +1,20 @@
+import java.util.ArrayList;
 public class Student {
     //Fields
     private String firstName;
-    private static int num=1;
-    private int studentId;
-    private Courses[]courses= new Courses[8];
+    private static int studentId=0;
+    private ArrayList<Courses> courses = new ArrayList<Courses>();
 
     //Constructor
      //Default
     Student(){
         firstName = "Anh";
-        studentId=num;
-        num++;
+        studentId++;
     }
      //Take in a name, increase id by 1
     Student(String firstName){
         this.firstName=firstName;
-        studentId=num;
-        num++;
+        studentId++;
     }
 
     //Methods
@@ -37,11 +35,11 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public Courses[] getCourses() {
+    public ArrayList<Courses> getCourses() {
         return courses;
     }
 
-    public void setCourses(Courses[] courses) {
+    public void setCourses(ArrayList<Courses> courses) {
         this.courses = courses;
     }
 
@@ -49,12 +47,32 @@ public class Student {
     public String toString(){
         return "First name:"+firstName+", Student ID:"+studentId;
     }
+
     //Add a course to the array
-    public Courses[] addCourse(Courses courses){
-        int pos=0;
-        this.courses[pos]=courses;
-        pos++;
-       return this.courses;
+    public void addCourse(Courses c){
+        this.courses.add(c);
+    }
+
+    //Calculate average grade
+    public int avgGrade(){
+        int sum=0;
+        for (Courses c:courses){
+            sum+=c.getStudentGrade();
+
+        }
+        return sum/courses.size();
+    }
+
+    //print out all courses
+    public void printCourse(){
+        if (courses.size()==0){
+            System.out.println("No course");
+        }
+        else {
+            for (Courses c:courses){
+                System.out.println(c.getSubjectName()+", ");
+            }
+        }
     }
 
 }
