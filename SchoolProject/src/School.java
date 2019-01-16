@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class School {
-    //fields
+    //Fields
     ArrayList<Teacher> teachers = new ArrayList<>();
     ArrayList<Student> students = new ArrayList<>();
     String teacherName;
@@ -9,10 +9,18 @@ public class School {
     int numOfClass;
 
     //constructor
-
+      //Default
+    School(){
+        teacherName = "";
+        studentName = "";
+        numOfClass = 0;
+    }
+    School(String teacherName, String studentName){
+        this.teacherName = teacherName;
+        this. studentName = studentName;
+    }
 
     //getters and setters
-
     public ArrayList<Teacher> getTeachers() {
         return teachers;
     }
@@ -53,20 +61,42 @@ public class School {
         this.numOfClass = numOfClass;
     }
 
-    //methods
-    public void addTeacher(Teacher teacher){
-        for (int i=0;i<teachers.size();i++){
-            teachers.add(i,teacher);
+    //Methods
+     //Add teacher to teacher array + add student to student array
+    public void addTeacher(Teacher t){
+        this.teachers.add(t);
+        }
+    public void addStudent(Student s){
+        this.students.add(s);
+    }
+
+     //Delete teacher from the array + delete student from the array
+    public void deleteTeacher(Teacher t){
+        this.teachers.remove(t);
+    }
+    public void deleteStudent(Student s){
+        this.students.remove(s);
+    }
+
+     //Show all teachers and students
+    public void showTeacher (){
+        if (teachers.size()==0){
+            System.out.println("No teacher to print");
+        }
+        else {
+            for (Teacher t:teachers){
+                System.out.println(teacherName+", ");
+            }
         }
     }
-    public void addStudent(Student student){
-        for (int i=0; i<students.size();i++){
-            students.add(i,student);
+    public void showStudent(){
+        if (students.size()==0){
+            System.out.println("No student to print");
         }
-    }
-    public void deleteTeacher(Teacher teacher){
-        for (int i=0;i<teachers.size();i++){
-            teachers.remove(i);
+        else {
+            for (Student s: students){
+                System.out.println(studentName+ ", ");
+            }
         }
     }
 
