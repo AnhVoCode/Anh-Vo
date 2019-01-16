@@ -17,6 +17,7 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.grade = grade;
+        id++;
     }
     //Getters and Setters
 
