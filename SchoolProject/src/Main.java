@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+        //Add 10 students to student list
         Student a = new Student("1",null,0);
         Student b = new Student("2",null,0);
         Student c = new Student("3",null,0);
@@ -15,6 +16,7 @@ public class Main {
         for (Student y:x){
             s.addStudent(y);
         }
+        //Show student list
         s.showStudent();
         //remove 2 students
         s.deleteStudent(a);
