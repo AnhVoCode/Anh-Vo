@@ -22,7 +22,7 @@ public class Main {
         s.deleteStudent(a);
         s.deleteStudent(b);
         //show the list again
-        System.out.println("show the list again");
+        System.out.println("After remover 2 students");
         s.showStudent();
 
         //Add 3 teachers to the ArrayList
