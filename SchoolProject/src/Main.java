@@ -12,8 +12,8 @@ public class Main {
         Student j = new Student("10",null,0);
         Student[] x = {a,b,c,d,e,f,g,h,i,j};
         School s  = new School();
-        for (int y = 0;y<x.length;y++){
-            s.addStudent(x[y]);
+        for (Student y:x){
+            s.addStudent(y);
         }
         s.showStudent();
         //remove 2 students
