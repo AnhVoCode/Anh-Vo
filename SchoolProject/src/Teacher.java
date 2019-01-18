@@ -6,9 +6,9 @@ public class Teacher {
 
     //Constructors
     Teacher(){
-        firstName = "Paul";
-        lastName = "Zaremba";
-        subjectName = "Programming 11";
+        firstName = "";
+        lastName = "";
+        subjectName = "";
     }
     Teacher(String firstName, String lastName, String subjectName){
         this.firstName= firstName;

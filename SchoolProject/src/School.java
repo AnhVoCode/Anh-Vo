@@ -21,22 +21,6 @@ public class School {
     }
 
     //getters and setters
-    public ArrayList<Teacher> getTeachers() {
-        return teachers;
-    }
-
-    public void setTeachers(ArrayList<Teacher> teachers) {
-        this.teachers = teachers;
-    }
-
-    public ArrayList<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(ArrayList<Student> students) {
-        this.students = students;
-    }
-
     public String getTeacherName() {
         return teacherName;
     }
@@ -85,7 +69,7 @@ public class School {
         }
         else {
             for (Teacher t:teachers){
-                System.out.println(teacherName+", ");
+                System.out.println(t.getFirstName());
             }
         }
     }
@@ -95,7 +79,7 @@ public class School {
         }
         else {
             for (Student s: students){
-                System.out.println(studentName+ ", ");
+                System.out.println(s.getFirstName());
             }
         }
     }
