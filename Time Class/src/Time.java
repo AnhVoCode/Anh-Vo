@@ -11,7 +11,7 @@ public class Time {
         minute = 0;
         second = 0;
     }
-    //Handle invalid inputs
+    //Input
     Time(int hour, int minute, int second){
         this.hour = hour;
         this.minute = minute;
@@ -70,39 +70,37 @@ public class Time {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
      //next second
-    public Time nextSecond(Time t){
-        t.second++;
-        if (t.second==60){
-            t.minute++;
-            t.second=0;
-            if (t.minute==60){
-                t.hour++;
-                t.minute=0;
+    public void nextSecond(){
+        second++;
+        if (second>59){
+            minute++;
+            second=0;
+            if (minute>59){
+                hour++;
+                minute=0;
             }
-            if (hour==24){
-                t.hour = 0;
-                t.minute=0;
-                t.second=0;
+            if (hour>23){
+                hour = 0;
+                minute=0;
+                second=0;
             }
         }
-        return t;
     }
      //previous second
-    public Time previousSecond(Time t){
-        t.second--;
-        if (t.second==0){
-            t.minute--;
-            t.second=59;
-            if (t.minute==0){
-                t.hour--;
-                t.minute=59;
-                if (t.hour==0){
-                    t.hour=0;
-                    t.minute=0;
-                    t.second=0;
+    public void previousSecond(){
+       second--;
+        if (second<0){
+            minute--;
+            second=59;
+            if (minute<0){
+                hour--;
+                minute=59;
+                if (hour<0){
+                    hour=0;
+                    minute=59;
+                    second=59;
                 }
             }
         }
-        return t;
     }
 }
