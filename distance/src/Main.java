@@ -1,31 +1,27 @@
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        /*//Input
-        Scanner in = new Scanner(System.in);
-        int[] distance = new int[4];
-        for (int i:distance){
-            distance[i]= in.nextInt();
-        }
-
-        //Output*/
-        int[] distance={3,10,12,5};
-        for (int row =0; row<5;row++ ){
-            for (int column = 0; column<5;column++){
-                int begin = Math.min(row,column);
-                int last = Math.max(row,column);
-                int d=0;
-                for (int i = begin; i<last;i++){
-                    d+=distance[i];
+        int[] distance = {3,10,12,5};
+        int d=0;
+        for (int i=0; i<distance.length;i++){
+            for (int j=0;j<distance.length;j++){
+                if (j==i){
+                    d=0;
+                    System.out.print(d+" ");
                 }
-                System.out.print(d);
+                if (j<i) {
+                    for (int k = 0; k > -1; k--) {
+                        d += distance[k];
+                        System.out.print(d + " ");
+                    }
+                }
+                else {
+                    d+=distance[j];
+                    System.out.print(d+" ");
+                }
             }
-            System.out.println("");
-
+            System.out.println();
 
         }
 
     }
-
-
 }
