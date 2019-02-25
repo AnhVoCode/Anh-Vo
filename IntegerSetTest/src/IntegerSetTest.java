@@ -28,7 +28,8 @@ public class IntegerSetTest {
     @Test
     public void testInsertAlreadyThere(){
         //Check if the number is there
-        assertEquals(1,testSet.size());
+        testSet.insert(2);
+        assertEquals(testSet.size(),1);
         assertTrue(testSet.contain(2));
         //The size of the set remains the same, number not insert
         assertEquals("The number is not there",testSet.size(),1);
@@ -37,6 +38,7 @@ public class IntegerSetTest {
     @Test
     public void testRemoveNum(){
         //Check if the number is there
+        testSet.insert(2);
         assertEquals(testSet.size(),1);
         assertTrue(testSet.contain(2));
         //Remove the number

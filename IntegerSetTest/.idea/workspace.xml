@@ -16,11 +16,12 @@
     <session id="-1961599482">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -35,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2663" />
+          <entry key="java" value="2759" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2663" />
+          <entry key="JAVA" value="2759" />
         </counts>
       </usages-collector>
     </session>
@@ -59,16 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntegerSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
+            <state relative-caret-position="510">
               <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-              <folding>
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#172#173#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -76,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/IntegerSetTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="799">
+              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,7 +107,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="543" />
     <option name="y" value="39" />
     <option name="width" value="844" />
@@ -126,8 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +149,8 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -166,7 +159,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550784607379" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551126081061" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -246,8 +239,8 @@
       <list>
         <item itemvalue="JUnit.IntegerSetTest.testRemoveNum" />
         <item itemvalue="JUnit.IntegerSetTest.testInsertAlreadyThere" />
-        <item itemvalue="JUnit.IntegerSetTest.testInsertNotThere" />
         <item itemvalue="JUnit.IntegerSetTest" />
+        <item itemvalue="JUnit.IntegerSetTest.testInsertNotThere" />
         <item itemvalue="JUnit.IntegerSetTest.testRemoveNumNotThere" />
       </list>
     </recent_temporary>
@@ -265,60 +258,60 @@
       <workItem from="1550091719092" duration="764000" />
       <workItem from="1550607632770" duration="2872000" />
       <workItem from="1550610511186" duration="1855000" />
-      <workItem from="1550780568262" duration="3885000" />
+      <workItem from="1550780568262" duration="4632000" />
+      <workItem from="1551126028017" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 05m 21s.xml">
+    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 27m 49s.xml">
       <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 12m 54s.xml">
+    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 28m 34s.xml">
       <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 13m 04s.xml">
+    <history-entry file="IntegerSetTest_testRemoveNum - 2019.02.21 at 13h 30m 09s.xml">
+      <configuration name="IntegerSetTest.testRemoveNum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 33m 42s.xml">
       <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 22m 02s.xml">
+    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 34m 13s.xml">
       <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 22m 19s.xml">
+    <history-entry file="IntegerSetTest - 2019.02.21 at 13h 35m 23s.xml">
+      <configuration name="IntegerSetTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegerSetTest_testRemoveNum - 2019.02.21 at 13h 39m 00s.xml">
+      <configuration name="IntegerSetTest.testRemoveNum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegerSetTest_testRemoveNum - 2019.02.21 at 13h 40m 01s.xml">
+      <configuration name="IntegerSetTest.testRemoveNum" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.25 at 12h 20m 56s.xml">
       <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 22m 42s.xml">
-      <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerSetTest_testInsertNotThere - 2019.02.21 at 13h 23m 19s.xml">
-      <configuration name="IntegerSetTest.testInsertNotThere" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 23m 36s.xml">
-      <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 24m 00s.xml">
-      <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerSetTest_testInsertAlreadyThere - 2019.02.21 at 13h 24m 20s.xml">
-      <configuration name="IntegerSetTest.testInsertAlreadyThere" configurationId="JUnit" />
+    <history-entry file="IntegerSetTest_testRemoveNum - 2019.02.25 at 12h 21m 24s.xml">
+      <configuration name="IntegerSetTest.testRemoveNum" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9376000" />
+    <option name="totallyTimeSpent" value="10187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.260745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26432666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -327,6 +320,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32974428" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -356,23 +350,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntegerSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
+        <state relative-caret-position="510">
           <caret line="32" column="29" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
-          <folding>
-            <element signature="e#148#149#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntegerSetTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
+        <state relative-caret-position="799">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
