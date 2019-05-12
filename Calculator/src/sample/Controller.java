@@ -7,9 +7,10 @@ import java.util.ArrayList;
 
 public class Controller {
     public TextField textGetNum;
-    int total = 0;
-    ArrayList<Integer> number = new ArrayList<Integer>();
-    ArrayList<String> operation = new ArrayList<String>();
+    int num, total;
+    int calculation;
+    /*ArrayList<Integer> number = new ArrayList<Integer>();
+    ArrayList<String> operation = new ArrayList<String>();*/
 
     public void print9(ActionEvent actionEvent) {
        textGetNum.setText(textGetNum.getText()+"9");
@@ -60,27 +61,41 @@ public class Controller {
     }
 
     public void printTotal(ActionEvent actionEvent) {
-        textGetNum.setText(Integer.toString(total));
+        arithmetic_operation();
     }
 
-    public void artihmetic_operation(){
-        int num1 = Integer.parseInt(textGetNum.getText());
-        number.add(num1);
-        operation.add("+");
-        for (int i : number){
-            total+=number.get(i);
+    public void arithmetic_operation(){
+        switch(calculation){
+            case 1: //Addition
+                total = num + Integer.parseInt(textGetNum.getText());
+                textGetNum.setText(Integer.toString(total));
+                break;
+            case 2: //Subtraction
+                total = num - Integer.parseInt(textGetNum.getText());
+                textGetNum.setText(Integer.toString(total));
+                break;
+            case 3: //Multiplication
+                total = num * Integer.parseInt(textGetNum.getText());
+                textGetNum.setText(Integer.toString(total));
+                break;
         }
-
-
     }
     public void Add(ActionEvent actionEvent) {
-
+        num = Integer.parseInt(textGetNum.getText());
+        calculation = 1;
+        textGetNum.setText("");
     }
 
     public void Subtract(ActionEvent actionEvent) {
+        num = Integer.parseInt(textGetNum.getText());
+        calculation = 2;
+        textGetNum.setText("");
     }
 
     public void Multiply(ActionEvent actionEvent) {
+        num = Integer.parseInt(textGetNum.getText());
+        calculation = 3;
+        textGetNum.setText("");
     }
 
 
