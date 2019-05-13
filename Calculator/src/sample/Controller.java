@@ -7,9 +7,10 @@ import java.util.ArrayList;
 
 public class Controller {
     public TextField textGetNum;
-    int total = 0;
-    ArrayList<Integer> number = new ArrayList<Integer>();
-    ArrayList<String> operation = new ArrayList<String>();
+    double total;
+    int pos = 0;
+    ArrayList<Double> number = new ArrayList<>();
+    ArrayList<String> operation = new ArrayList<>();
 
     public void print9(ActionEvent actionEvent) {
        textGetNum.setText(textGetNum.getText()+"9");
@@ -52,79 +53,71 @@ public class Controller {
     }
 
     public void printDot(ActionEvent actionEvent) {
-        textGetNum.setText(textGetNum.getText()+".");
+        if (!textGetNum.getText().contains(".")){
+            textGetNum.setText(textGetNum.getText()+".");
+        }
     }
-
     public void clear(ActionEvent actionEvent) {
+        clearOut();
         textGetNum.setText("");
+    }
+    void clearOut(){
+        pos = 0;
+        operation.clear();
+        number.clear();
     }
 
     public void printTotal(ActionEvent actionEvent) {
-        textGetNum.setText(Integer.toString(total));
+        arithmetic_operation();
     }
 
-    public void artihmetic_operation(){
-        int num1 = Integer.parseInt(textGetNum.getText());
-        number.add(num1);
-        operation.add("+");
-        for (int i : number){
-            total+=number.get(i);
+    public void arithmetic_operation(){
+        number.add(Double.parseDouble(textGetNum.getText()));
+        if (number.size()<2){
+            return;
         }
-
-
+        else{
+            total = number.get(0);
+            for (int i =1; i<number.size();i++){
+                if (operation.get(pos).equals("plus")){
+                    total+=number.get(i);
+                    pos++;
+                }
+                else if (operation.get(pos).equals("minus")){
+                    total-=number.get(i);
+                    pos++;
+                }
+                else if (operation.get(pos).equals("multiply")){
+                    total*=number.get(i);
+                    pos++;
+                }
+            }
+            textGetNum.setText(Double.toString(total));
+            clearOut();
+        }
     }
     public void Add(ActionEvent actionEvent) {
-
+        operation.add("plus");
+        number.add(Double.parseDouble(textGetNum.getText()));
+        textGetNum.setText("");
     }
 
     public void Subtract(ActionEvent actionEvent) {
+        operation.add("minus");
+        number.add(Double.parseDouble(textGetNum.getText()));
+        textGetNum.setText("");
     }
 
     public void Multiply(ActionEvent actionEvent) {
-    }
-
-
-
-
-
-
-
-    /*public TextField textAdd;
-    public TextField textSubtract;
-    public TextField textMultiply;
-    public TextField textDivide;
-    public Label Total;
-    public double total = 0;
-
-
-    public void Add(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textAdd.getText());
-        total+=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Subtract(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textSubtract.getText());
-        total-=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Multiply(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textMultiply.getText());
-        total*=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Clear(ActionEvent actionEvent) {
-        total-=total;
-        Total.setText(Double.toString(total));
-
+        operation.add("multiply");
+        number.add(Double.parseDouble(textGetNum.getText()));
+        textGetNum.setText("");
     }
 
     public void Divide(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textDivide.getText());
-        total/=num;
-        Total.setText(Double.toString(total));
-    }*/
+        operation.add("divide");
+        number.add(Double.parseDouble(textGetNum.getText()));
+        textGetNum.setText("");
+    }
 }
 
