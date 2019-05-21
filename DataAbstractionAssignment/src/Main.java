@@ -21,6 +21,5 @@ public class Main {
         Withdraw x = new Withdraw(60.00, new Date(),Customer.CHECKING);
         System.out.println(x.toString());
 
-
     }
 }
