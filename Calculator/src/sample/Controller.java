@@ -97,49 +97,5 @@ public class Controller {
         calculation = 3;
         textGetNum.setText("");
     }
-
-
-
-
-
-
-
-    /*public TextField textAdd;
-    public TextField textSubtract;
-    public TextField textMultiply;
-    public TextField textDivide;
-    public Label Total;
-    public double total = 0;
-
-
-    public void Add(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textAdd.getText());
-        total+=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Subtract(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textSubtract.getText());
-        total-=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Multiply(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textMultiply.getText());
-        total*=num;
-        Total.setText(Double.toString(total));
-    }
-
-    public void Clear(ActionEvent actionEvent) {
-        total-=total;
-        Total.setText(Double.toString(total));
-
-    }
-
-    public void Divide(ActionEvent actionEvent) {
-        double num = Double.parseDouble(textDivide.getText());
-        total/=num;
-        Total.setText(Double.toString(total));
-    }*/
 }
 
