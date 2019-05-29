@@ -9,5 +9,5 @@ public class Controller {
     public TextField textGetGender;
     public TextField textGetHobby;
 
-    
+
 }
