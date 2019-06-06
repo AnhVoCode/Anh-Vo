@@ -46,16 +46,15 @@ public class Main {
             }
             String[] words = s.split("\\s+");
             for (int i = 0; i < words.length; i++) {
-                if (words[i]==word){
-                    System.out.println(i);
+                String w = words[i];
+                for (int k = 0;k<w.length();k++){
+                    if (w.substring(k)==word){
+                        System.out.println(i);
+                    }
                 }
+
             }
         }
-
-
-
-
-
 
     }
 
