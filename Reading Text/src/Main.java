@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class Main {
-    static void searchingWord(String fileName, String word) throws IOException {
+    static void searchingWord(String fileName, String keyWord) throws IOException {
         //Copy each sentence to the ArrayList
         ArrayList<String> sentences = new ArrayList<>();
         ArrayList<String> lines = new ArrayList<>();
@@ -41,21 +41,19 @@ public class Main {
         br.close();
         //Looping through sentences in the ArrayList to search for "word" and return the index position of the sentence containing that word
         for (String s: sentences){
-            if (s.contains(word)){
+            if (s.contains(keyWord)){
                 System.out.println("The word is in sentence number: "+ sentences.indexOf(s));
             }
-            String[] words = s.split("\\s+");
-            for (int i = 0; i < words.length; i++) {
-                String w = words[i];
-                for (int k = 0;k<w.length();k++){
-                    if (w.substring(k)==word){
-                        System.out.println(i);
-                    }
+
+            String[] words = s.split("\\s+|\\W+");
+            for (int i =0; i<words.length;i++){
+                if (words[i].equals(keyWord)){
+                    System.out.println("Position of the word in the sentence: "+i);
+                    System.out.println("--------------------------------------");
                 }
-
             }
-        }
 
+        }
     }
 
 
