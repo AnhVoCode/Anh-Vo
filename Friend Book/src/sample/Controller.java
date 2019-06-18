@@ -1,10 +1,14 @@
 package sample;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class Controller {
     public TextField textGetName;
@@ -14,7 +18,7 @@ public class Controller {
     public Label lblName;
     public Label lblAge;
     public Label lblGender;
-    public ListView <Friend> friendList = new ListView<Friend>();
+    public ListView <Friend> friendList = new ListView();
 
     public void addFriend(ActionEvent actionEvent) {
         Friend temp = new Friend(textGetName.getText(),Integer.parseInt(textGetAge.getText()),textGetGender.getText());
@@ -40,5 +44,21 @@ public class Controller {
         lblName.setText("");
         lblAge.setText("");
         lblGender.setText("");
+    }
+
+    public void saveFriend(ActionEvent actionEvent) throws IOException {
+        ObservableList<Friend> myLIst = friendList.getItems();
+        for (Friend f:myLIst){
+            f.writeToFile();
+        }
+        friendList.getItems().clear();
+    }
+
+    public void loadFriend(ActionEvent actionEvent) throws IOException {
+        friendList.getItems().clear();
+        ArrayList<Friend> friends = CreateFriend.createAllFriend("Friend.txt");
+        for (Friend f : friends){
+            friendList.getItems().add(f);
+        }
     }
 }
