@@ -51,6 +51,16 @@ public class Controller {
         for (Friend f:myLIst){
             f.writeToFile();
         }
+        for (Friend f:myLIst){
+            if (f.getGender().equals("M")){
+                f.writeToMaleFile();
+            }
+        }
+        for (Friend f : myLIst){
+            if (f.getGender().equals("F")){
+                f.writeToFemaleFile();
+            }
+        }
         friendList.getItems().clear();
     }
 
@@ -60,5 +70,26 @@ public class Controller {
         for (Friend f : friends){
             friendList.getItems().add(f);
         }
+    }
+
+    public void loadMale(ActionEvent actionEvent) throws IOException{
+        friendList.getItems().clear();
+        ArrayList<Friend> males = CreateFriend.createAllFriend("Male.txt");
+        for (Friend f: males){
+            if (f.getGender().equals("M")){
+                friendList.getItems().add(f);
+            }
+        }
+    }
+
+    public void loadFemale(ActionEvent actionEvent) throws IOException {
+        friendList.getItems().clear();
+        ArrayList<Friend> females = CreateFriend.createAllFriend("Female.txt");
+        for (Friend f: females){
+            if (f.getGender().equals("F")){
+                friendList.getItems().add(f);
+            }
+        }
+
     }
 }

@@ -46,7 +46,20 @@ public class Friend {
     public void writeToMaleFile() throws IOException{
         FileWriter fw = new FileWriter("Male.txt",true);
         BufferedWriter bw = new BufferedWriter(fw);
-        bw.write(getGender()+",\r");
+        bw.write(name+",\r");
+        bw.write(Integer.toString(getAge())+",\r");
+        bw.write(getGender()+"\r");
+        bw.write(";\r");
+        bw.close();
+    }
+    public void writeToFemaleFile() throws IOException{
+        FileWriter fw = new FileWriter("Female.txt",true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(name+",\r");
+        bw.write(Integer.toString(getAge())+",\r");
+        bw.write(getGender()+"\r");
+        bw.write(";\r");
+        bw.close();
     }
 
 
