@@ -86,11 +86,9 @@ public class Customer {
                 return true;
             }
         }
-        else {
-            return false;
-        }
         return false;
     }
+
     //do not modify
     public void displayDeposits(){
         for(Deposit d : deposits){
