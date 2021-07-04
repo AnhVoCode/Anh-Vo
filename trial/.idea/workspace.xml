@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44409729-ec79-4c0b-a1e9-72ab93b112c6" name="Default Changelist" comment="">
+    <list default="true" id="50b3aea2-f58d-4d3a-bf95-ed5ccb86703b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Are We There Yet/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Basketball/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Cold Compress/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Decompress/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Flipper/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Occupy Parking/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Rule Of Three/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Snake Game/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Snake Game/.idea/ant.xml" afterDir="false" />
@@ -19,10 +21,10 @@
       <change afterPath="$PROJECT_DIR$/../Snake Game/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Snake Game/Snake Game.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Snake/Snake.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../trial/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Telemarketer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Telemarketer/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Telemarketer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Telemarketer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Telemarketer/out/production/Telemarketer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Telemarketer/out/production/Telemarketer/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Telemarketer/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Telemarketer/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +41,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1XKcqn4SoTX6xMavyHpqXs03oeg" />
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\anhvo\Anh-Vo\trial\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XKYszWkv6C2XYH9rqwAxyDixrb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,7 +70,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Telemarketer" />
+      <module name="trial" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,12 +86,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="44409729-ec79-4c0b-a1e9-72ab93b112c6" name="Default Changelist" comment="" />
-      <created>1580798419707</created>
+      <changelist id="50b3aea2-f58d-4d3a-bf95-ed5ccb86703b" name="Default Changelist" comment="" />
+      <created>1580796463846</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1580798419707</updated>
-      <workItem from="1580798421098" duration="439000" />
+      <updated>1580796463846</updated>
+      <workItem from="1580796467333" duration="409000" />
+      <workItem from="1580801326325" duration="245000" />
     </task>
     <servers />
   </component>
@@ -90,25 +100,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1580798860401">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1580801571798">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580798860401" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1580798860401">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1580801571798" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1580801571798">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580798860401" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1580798860401">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1580801571798" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1580801571798">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580798860401" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1580798860401">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1580801571798" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1580801571798">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580798860401" />
-    <state x="65" y="5" key="new project wizard" timestamp="1580798839718">
-      <screen x="0" y="0" width="1366" height="768" />
-    </state>
-    <state x="65" y="5" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1580798839718" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1580801571798" />
   </component>
 </project>
